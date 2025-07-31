@@ -1,11 +1,17 @@
 terraform {
+/*  cloud {
+    organization = "policy-as-code-training"
+    workspaces {
+      name = "policy-dev-dvp"
+    }
+  }
+*/
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
     }
   }
 }
-
 provider "aws" {
   region  = "us-west-1"
 }
